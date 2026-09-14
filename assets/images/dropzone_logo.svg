@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 74" width="34" height="40" fill="none">
+  <!-- Soft drop glow -->
+  <defs>
+    <filter id="dzGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#1d7cf2" flood-opacity="0.35"/>
+    </filter>
+    <linearGradient id="dzGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d7cf2"/>
+      <stop offset="100%" stop-color="#135fbf"/>
+    </linearGradient>
+    <linearGradient id="foldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Document Sheet -->
+  <path d="M8 2C4.68629 2 2 4.68629 2 8V66C2 69.3137 4.68629 72 8 72H56C59.3137 72 62 69.3137 62 66V22L42 2H8Z" fill="url(#dzGrad)" stroke="#60a5fa" stroke-width="2.5" stroke-linejoin="round" filter="url(#dzGlow)"/>
+
+  <!-- Folded Corner -->
+  <path d="M42 2V20C42 21.1046 42.8954 22 44 22H62L42 2Z" fill="url(#foldGrad)"/>
+
+  <!-- DZ Lettering inside file -->
+  <text x="32" y="52" font-family="'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="23" fill="#ffffff" text-anchor="middle" letter-spacing="-1">DZ</text>
+</svg>

@@ -1,0 +1,345 @@
+/* ==========================================================================
+   DropZone Theme - Pure Bootstrap 5 Theming
+   Color palette matching DropZone screenshots: Deep navy, electric blue, clean white.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@500;700&display=swap');
+
+:root {
+  /* Bootstrap 5 Theme Color Overrides */
+  --bs-body-bg: #090e1a;
+  --bs-body-color: #94a3b8;
+  --bs-primary: #1d7cf2;
+  --bs-primary-rgb: 29, 124, 242;
+  --bs-secondary-bg: #101b31;
+  --bs-border-color: #1a2b4c;
+  --bs-border-color-translucent: rgba(26, 43, 76, 0.6);
+
+  /* DropZone Signature Colors */
+  --dz-bg: #090e1a;
+  --dz-surface: #0d1527;
+  --dz-card: #101b31;
+  --dz-card-inner: #14223d;
+  --dz-border: #1a2b4c;
+  --dz-border-accent: #2563eb;
+  --dz-primary: #1d7cf2;
+  --dz-primary-hover: #166cd9;
+  --dz-text-white: #ffffff;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--dz-bg);
+  color: #94a3b8;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Subtle top glow */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 50vw;
+  height: 400px;
+  background: radial-gradient(circle, rgba(29, 124, 242, 0.08) 0%, rgba(9, 14, 26, 0) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Navbar Customizations */
+.navbar-dz {
+  background: rgba(9, 14, 26, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--dz-border);
+}
+
+.navbar-dz .nav-link {
+  color: #cbd5e1 !important;
+  font-size: 0.92rem;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 0.45rem 0.85rem !important;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+}
+
+.navbar-dz .nav-link:hover,
+.navbar-dz .nav-link.active {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* Compact, proportional buttons */
+.btn-primary {
+  background-color: var(--dz-primary);
+  border-color: var(--dz-primary);
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(29, 124, 242, 0.3);
+  transition: all 0.15s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--dz-primary-hover);
+  border-color: var(--dz-primary-hover);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(29, 124, 242, 0.45);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Cards styled to match app dark blue */
+.card-dz {
+  background-color: var(--dz-card);
+  border: 1px solid var(--dz-border);
+  border-radius: 12px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.card-dz:hover {
+  border-color: var(--dz-border-accent);
+}
+
+/* Top Announcement Notice */
+.top-notice {
+  background: linear-gradient(90deg, #0e1c36 0%, #15294f 50%, #0e1c36 100%);
+  border-bottom: 1px solid var(--dz-border);
+  font-size: 0.85rem;
+  padding: 0.45rem 1rem;
+}
+
+/* Hero desktop window mockup */
+.hero-mockup-window {
+  background: var(--dz-surface);
+  border: 1px solid var(--dz-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.55), 0 0 30px rgba(29, 124, 242, 0.12);
+}
+
+.window-bar {
+  background: #070c17;
+  border-bottom: 1px solid var(--dz-border);
+  padding: 0.6rem 1rem;
+}
+
+.window-dots {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.window-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* App Mockup screenshot container */
+.mockup-img-wrap {
+  width: 100%;
+  background: #000000;
+  position: relative;
+  line-height: 0;
+}
+
+.mockup-img-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  transition: opacity 0.15s ease;
+}
+
+/* Interactive Mockup Tabs */
+.mockup-tab-btn {
+  background: transparent;
+  color: #94a3b8;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
+  transition: all 0.15s ease;
+}
+
+.mockup-tab-btn:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.mockup-tab-btn.active {
+  background: rgba(29, 124, 242, 0.15);
+  border-color: var(--dz-primary);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Badges */
+.badge-dz {
+  background: rgba(29, 124, 242, 0.12);
+  color: #60a5fa;
+  border: 1px solid rgba(29, 124, 242, 0.25);
+  font-weight: 600;
+}
+
+/* Sticky CTA bottom bar */
+.sticky-bar-dz {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(9, 14, 26, 0.95);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid var(--dz-border);
+  padding: 0.6rem 1rem;
+  z-index: 1030;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.sticky-bar-dz.visible {
+  transform: translateY(0);
+}
+
+/* Accordion Dark Blue Overrides */
+.accordion-dz .accordion-item {
+  background-color: var(--dz-card);
+  border: 1px solid var(--dz-border);
+  margin-bottom: 0.6rem;
+  border-radius: 8px !important;
+  overflow: hidden;
+}
+
+.accordion-dz .accordion-button {
+  background-color: var(--dz-card);
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  box-shadow: none;
+}
+
+.accordion-dz .accordion-button:not(.collapsed) {
+  background-color: var(--dz-card-inner);
+  color: #60a5fa;
+  box-shadow: none;
+}
+
+.accordion-dz .accordion-button::after {
+  filter: invert(1);
+}
+
+.accordion-dz .accordion-body {
+  background-color: var(--dz-card-inner);
+  color: #94a3b8;
+  font-size: 0.93rem;
+  line-height: 1.65;
+}
+
+/* Text Gradients */
+.text-gradient-dz {
+  background: linear-gradient(135deg, #ffffff 40%, #93c5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ==========================================================================
+   DISCOUNT & ANIMATIONS - "WOW BIG SELL"
+   ========================================================================== */
+
+/* Glowing pulse animation for coupon badges */
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(29, 124, 242, 0.55);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(29, 124, 242, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(29, 124, 242, 0);
+  }
+}
+
+@keyframes flame-bounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-2px) scale(1.1); }
+}
+
+@keyframes border-shimmer {
+  0% { border-color: rgba(29, 124, 242, 0.4); }
+  50% { border-color: #60a5fa; }
+  100% { border-color: rgba(29, 124, 242, 0.4); }
+}
+
+.anim-pulse {
+  animation: pulse-glow 2s infinite;
+}
+
+.anim-flame {
+  display: inline-block;
+  animation: flame-bounce 1.5s infinite ease-in-out;
+}
+
+/* Attention-Grabbing Coupon Box Component */
+.coupon-box {
+  background: linear-gradient(135deg, #101c34 0%, #0d172c 100%);
+  border: 2px dashed #3b82f6;
+  border-radius: 10px;
+  padding: 0.85rem 1.25rem;
+  animation: border-shimmer 3s infinite ease-in-out;
+  box-shadow: 0 4px 20px rgba(29, 124, 242, 0.15);
+}
+
+.coupon-code-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+  color: #93c5fd;
+  background: rgba(29, 124, 242, 0.2);
+  border: 1px solid rgba(147, 197, 253, 0.4);
+  padding: 0.35rem 0.85rem;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.copy-coupon-btn {
+  background: #1d7cf2;
+  color: #ffffff;
+  border: 1px solid #60a5fa;
+  font-weight: 600;
+  font-size: 0.82rem;
+  padding: 0.38rem 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.copy-coupon-btn:hover {
+  background: #166cd9;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(29, 124, 242, 0.4);
+}
+
+/* Big Sell Badge */
+.badge-big-sale {
+  background: linear-gradient(90deg, #ef4444 0%, #f97316 100%);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+}

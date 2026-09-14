@@ -1,0 +1,74 @@
+# DropZone
+
+> DropZone is a privacy-first, 100% offline desktop file converter and utility toolkit for Windows (with macOS and Linux planned). It processes files locally on the user's computer without uploading confidential data to cloud servers.
+
+## Product Overview
+- **Product Name**: DropZone
+- **Publisher**: DigiSpher (Achraf Salmy)
+- **Primary Value Proposition**: "Your files never leave your computer." Zero cloud uploads, zero recurring subscriptions, and complete offline capability.
+- **License Model**: Lifetime License (Pay once, own forever). No monthly or annual subscriptions.
+- **Retail Price**: $34.99
+- **Launch Price**: $24.99
+- **Promotional Discount**: 20% OFF with code `DROPZONE2026` (reduces price to $19.99, valid through October 15, 2026).
+- **Official Store Link**: https://salmyachraf.gumroad.com/l/gzfxu?wanted=true
+- **Affiliate Program**: 25% recurring commission via Gumroad (https://salmyachraf.gumroad.com/affiliates)
+- **Refund Policy**: 30-day money-back guarantee, no questions asked (contact: digispher25@gmail.com).
+
+---
+
+## Core Features & Capabilities
+
+### 1. High-Precision PDF to Word (DOCX) Conversion
+- Reconstructs complex digital text-based PDFs into fully editable Microsoft Word (.docx) documents.
+- Solves the primary flaw of competing online converters by preserving:
+  - Exact table rows, cell alignments, and merged cell borders.
+  - Multi-column layouts without overlapping text frames.
+  - Native typography and font hierarchies.
+- 100% offline: confidential financial statements, legal contracts, and NDAs never touch a third-party server.
+- *Note*: Optimized for digital text PDFs. OCR for scanned image PDFs is on the product roadmap.
+
+### 2. Privacy First: 1-Click Metadata (EXIF) Stripper
+- Detects and removes sensitive hidden metadata before sharing files publicly:
+  - GPS latitude & longitude coordinates (home/office locations).
+  - Hardware device serials, camera lens identifiers, and smartphone model details.
+  - Timestamps, timezone logs, and software revision trails.
+  - Corporate user accounts and internal filesystem paths.
+- Completely sanitizes files while preserving 100% original pixel and document quality.
+
+### 3. Comprehensive PDF Toolset
+- **Compress PDF**: Reduces document footprint locally while keeping text sharp.
+- **Merge PDFs**: Combines multiple PDF files into one neatly organized document.
+- **Split PDF**: Breaks multi-page documents into individual pages.
+- **Extract Pages**: Extracts targeted page numbers or custom page ranges (e.g. 1-3, 5).
+- **Rotate Pages**: Re-orients upside-down or landscape pages (90°, 180°, 270°).
+
+### 4. Image Studio
+- **Universal Format Conversion**: Supports PNG, JPG, WebP, ICO, BMP, TIFF, and GIF.
+- **Lossless Compression**: Compresses photos without visible quality degradation.
+- **Bulk Resizing**: Batch scales dimensions for web or production.
+- **Windows Icon Generator**: Creates production-ready `.ico` application icons.
+- **Web Favicon Package**: Automatically generates `favicon.ico`, multi-resolution PNGs, and `site.webmanifest`.
+- **Images to PDF**: Compiles multiple photos and screenshots into a single clean PDF document.
+
+### 5. Local Video & Audio Engine
+- **Video Compression**: Encodes locally with H.264 compression to shrink large MP4/MKV files for email and messaging without cloud delays.
+- **Audio Extractor**: Extracts pristine audio tracks directly from video files.
+- **Audio Converter & Compressor**: Converts between MP3, WAV, AAC, FLAC, and OGG formats.
+
+### 6. Developer & Everyday Utilities
+- **Offline QR Code Generator**: Generates custom, high-resolution QR codes without ad redirects or tracking pixels.
+
+---
+
+## System Requirements
+- **OS**: Windows 10 or Windows 11 (64-bit architecture)
+- **Processor**: Intel or AMD 64-bit CPU
+- **Disk Space**: ~150 MB available storage
+- **Internet Requirement**: Needed only once for initial license activation; all conversion, compression, and metadata operations run completely offline.
+
+---
+
+## Marketing & Affiliate Program
+- **Affiliate Commission**: 25% on every referred sale.
+- **Affiliate Sign-Up URL**: https://salmyachraf.gumroad.com/affiliates
+- **Cookie & Payouts**: Automated tracking and direct payouts managed securely by Gumroad.

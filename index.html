@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DropZone — Privacy-First Local File Converter & Desktop Toolkit</title>
+  <meta name="description" content="Convert PDF to Word with layout & table preservation, strip EXIF metadata, compress video and convert images 100% locally. Special 20% off coupon DROPZONE2026 until Oct 15, 2026.">
+  <meta name="keywords" content="local file converter, PDF to Word offline, remove metadata, video compressor, image converter, private file converter, DropZone discount code">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://salmyachraf.gumroad.com/l/gzfxu">
+  <meta property="og:title" content="DropZone — Privacy-First Local File Converter & Desktop Toolkit">
+  <meta property="og:description" content="Convert PDF to Word with layout & table preservation, strip EXIF metadata, and process files 100% locally with zero subscriptions.">
+  <meta property="og:image" content="assets/images/gumroad_cover.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DropZone — Privacy-First Local File Converter">
+  <meta name="twitter:description" content="Convert PDF to Word with layout & table preservation, strip EXIF metadata, and process files locally. Use code DROPZONE2026 for 20% off.">
+  <meta name="twitter:image" content="assets/images/gumroad_cover.png">
+
+  <!-- Schema.org JSON-LD Structured Data for Software Application -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "DropZone",
+    "operatingSystem": "Windows 10, Windows 11",
+    "applicationCategory": "UtilitiesApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "19.99",
+      "priceCurrency": "USD",
+      "url": "https://salmyachraf.gumroad.com/l/gzfxu?wanted=true",
+      "priceValidUntil": "2026-10-15"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "29"
+    },
+    "description": "Privacy-first local desktop file converter for PDFs, images, video, and audio. Converts PDF to Word while preserving table rows and layout.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "DigiSpher"
+    }
+  }
+  </script>
+
+  <!-- Favicon: Flat File DZ Logo -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/dropzone_logo.svg">
+
+  <!-- Bootstrap 5.3 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Custom Dark Theme Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Notice (With Animated 20% Off Coupon) -->
+  <div class="top-notice text-center text-white py-1">
+    <div class="container d-flex align-items-center justify-content-center flex-wrap gap-2">
+      <span class="badge-big-sale"><i class="bi bi-fire anim-flame"></i> 20% OFF CODE</span>
+      <span class="small">Use code <strong class="text-warning font-monospace">DROPZONE2026</strong> for an extra 20% off (Pay only <strong>$19.99</strong>!) · Ends Oct 15, 2026</span>
+      <button class="btn btn-outline-light btn-sm py-0 px-2 copy-coupon-btn small"><i class="bi bi-clipboard me-1"></i>Copy Code</button>
+      <a href="https://salmyachraf.gumroad.com/l/gzfxu?wanted=true" target="_blank" rel="noopener" class="btn btn-primary btn-sm py-0 px-2 ms-1 small text-nowrap">Claim $19.99 Deal <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- Navbar: Clean Single-Line Bootstrap 5 Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-dz sticky-top py-2">
+    <div class="container">
+      <!-- Brand Logo: Flat File DZ -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="assets/images/dropzone_logo.svg" alt="DropZone Flat File Logo" width="28" height="34" class="d-inline-block align-text-top">
+        <span class="fw-bold fs-5 text-white tracking-tight">DropZone</span>
+        <span class="badge bg-primary-subtle text-primary border border-primary border-opacity-25 small px-2 py-0.5 rounded-pill d-none d-md-inline-block">Local File Tools</span>
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDropzone" aria-controls="navbarDropzone" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="navbarDropzone">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#pdf-to-word">PDF to Word</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#privacy-metadata">Privacy & Metadata</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#all-features">All Tools</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#comparison">Compare</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#affiliates"><span class="badge bg-success bg-opacity-25 border border-success border-opacity-50 py-1 px-2 small fw-bold" style="color: #4ade80;"><i class="bi bi-piggy-bank me-1"></i>Affiliates (25%)</span></a>
+          </li>
+        </ul>
+
+        <!-- Right Side: Clean Proportional CTA Button with 20% Off Callout -->
+        <div class="d-flex align-items-center gap-2">
+          <span class="badge bg-warning bg-opacity-25 text-warning border border-warning border-opacity-25 small px-2 py-1 text-nowrap d-none d-xl-inline-block">
+            <i class="bi bi-tag-fill me-1"></i> -20% CODE
+          </span>
+          <a href="https://salmyachraf.gumroad.com/l/gzfxu?wanted=true" target="_blank" rel="noopener" class="btn btn-primary btn-sm px-3 py-1.5 fw-semibold text-nowrap">
+            <i class="bi bi-bag-check-fill me-1"></i> Get DropZone · $19.99
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section: Centered & High-Impact with Coupon Highlight -->
+  <header id="hero" class="py-5">
+    <div class="container text-center pt-3 pb-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-9 col-xl-8">
+          <!-- Badge -->
+          <div class="d-inline-flex align-items-center gap-2 badge-dz px-3 py-1 rounded-pill mb-3">
+            <i class="bi bi-shield-check text-primary"></i> 100% Offline & Private Desktop File Converter
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="display-5 fw-bold text-white mb-3 text-gradient-dz">
+            Your Files Never Leave Your Computer.<br>
+            <span class="text-primary">Convert Locally & Safely.</span>
+          </h1>
+
+          <!-- Lead Paragraph -->
+          <p class="lead text-secondary mb-4 mx-auto" style="max-width: 720px; font-size: 1.1rem;">
+            Stop uploading private contracts, sensitive PDFs, and photos to third-party web servers. DropZone is an all-in-one desktop toolkit for <strong>PDFs, images, video, and audio</strong>. 
+            Features professional <strong>PDF to Word</strong> with exact table row and font preservation, <strong>1-click metadata removal</strong>, and <strong>zero recurring subscriptions</strong>.
+          </p>
+
+          <!-- Sleek Proportional Action Buttons -->
+          <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-3">
+            <a href="https://salmyachraf.gumroad.com/l/gzfxu?wanted=true" target="_blank" rel="noopener" class="btn btn-primary px-4 py-2 fw-semibold text-nowrap shadow">
+              <i class="bi bi-download me-1"></i> Get DropZone · $19.99
+            </a>
+            <a href="#pdf-to-word" class="btn btn-outline-light px-4 py-2 fw-semibold text-nowrap">
+              <i class="bi bi-file-earmark-word text-primary me-1"></i> See PDF to Word Engine
+            </a>
+          </div>
+
+          <!-- ATTENTION "WOW BIG SELL" ANIMATED COUPON BOX IN HERO -->
+          <div class="coupon-box d-inline-flex flex-wrap align-items-center justify-content-center gap-2 mb-4 mx-auto anim-pulse text-start">
+            <span class="badge-big-sale"><i class="bi bi-fire anim-flame me-1"></i> 20% OFF</span>
+            <span class="text-white small">Use code:</span>
+            <span class="coupon-code-badge">DROPZONE2026</span>
+            <button class="copy-coupon-btn" title="Copy discount code"><i class="bi bi-clipboard me-1"></i> Copy Code</button>
+            <span class="text-secondary small ms-1 d-none d-sm-inline">Pay <strong>$19.99</strong> (Valid until <strong>15 Oct 2026</strong>)</span>
+          </div>
+
+          <!-- Key Guarantees Row -->
+          <div class="d-flex justify-content-center flex-wrap gap-3 gap-md-4 text-secondary small mb-5">
+            <div><i class="bi bi-check-circle-fill text-success me-1"></i> 100% Offline Processing</div>
+            <div><i class="bi bi-check-circle-fill text-success me-1"></i> No Monthly Fees</div>
+            <div><i class="bi bi-check-circle-fill text-success me-1"></i> 30-Day Money-Back Guarantee</div>
+            <div><i class="bi bi-check-circle-fill text-success me-1"></i> No Account Required</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FULL-WIDTH DESKTOP APP WINDOW MOCKUP (No shrinking, natural 16:9 ratio!) -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-11 col-xl-10">
+          <div class="hero-mockup-window text-start">
+            <!-- Window Titlebar with Dots & Interactive Tabs -->
+            <div class="window-bar d-flex flex-wrap align-items-center justify-content-between gap-2">
+              <div class="d-flex align-items-center gap-2">
+                <div class="window-dots">
+                  <span class="window-dot bg-danger"></span>
+                  <span class="window-dot bg-warning"></span>
+                  <span class="window-dot bg-success"></span>
+                </div>
+                <span id="appWindowTitle" class="text-secondary small fw-medium ms-2 d-none d-sm-inline">
+                  DropZone — Home (29 local operations completed · Saved 21.2 MB)
+                </span>
+              </div>
+
+              <!-- Interactive Mockup Screen Switcher Tabs -->
+              <div class="d-flex align-items-center gap-1">
+                <button class="mockup-tab-btn active" data-screen="home"><i class="bi bi-house-door me-1"></i>Home</button>
+                <button class="mockup-tab-btn" data-screen="images"><i class="bi bi-image me-1"></i>Images</button>
+                <button class="mockup-tab-btn" data-screen="pdfs"><i class="bi bi-file-earmark-pdf me-1"></i>PDFs</button>
+                <button class="mockup-tab-btn" data-screen="videos"><i class="bi bi-camera-video me-1"></i>Videos</button>
+                <button class="mockup-tab-btn" data-screen="modal"><i class="bi bi-arrow-repeat me-1"></i>Convert</button>
+              </div>
+            </div>
+
+            <!-- Full-Resolution Screenshot Container (Never squished or cropped) -->
+            <div class="mockup-img-wrap">
+              <img id="appScreenDisplay" src="assets/screenshots/app_home.png" alt="DropZone Desktop Application Interface" class="img-fluid w-100">
+            </div>
+
+            <!-- Interactive Hint Bar -->
+            <div class="p-2 bg-dark bg-opacity-75 text-center text-secondary small border-top border-secondary border-opacity-25">
+              <i class="bi bi-cursor-fill text-primary me-1"></i> Click tabs above to preview actual DropZone screens: Home, Images, PDFs, Videos, or Format Modal
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Problem Statement: Cloud Converters vs DropZone -->
+  <section class="py-5 border-top border-bottom border-dark" style="background: #0b1322;">
+    <div class="container py-3">
+      <div class="text-center mx-auto mb-4" style="max-width: 680px;">
+        <span class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25 px-3 py-1 rounded-pill small fw-semibold mb-2">The Cloud Problem</span>
+        <h2 class="h2 fw-bold text-white mb-2">Why Uploading Files to Online Converters Is Risky</h2>
+        <p class="text-secondary small">Every time you use a free online converter, your confidential contracts, financial sheets, and photos travel through external cloud servers.</p>
+      </div>
+
+      <div class="row g-3">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card card-dz p-3 h-100">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="p-2 rounded bg-danger bg-opacity-10 text-danger fs-4"><i class="bi bi-shield-x"></i></div>
+              <h5 class="h6 text-white mb-0">Confidentiality Breaches</h5>
+            </div>
+            <p class="text-secondary small mb-0">
+              Tax returns, medical documents, NDAs, and company memos get uploaded to third-party servers. You have zero guarantee when or if they are permanently deleted.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card card-dz p-3 h-100">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="p-2 rounded bg-warning bg-opacity-10 text-warning fs-4"><i class="bi bi-cash-stack"></i></div>
+              <h5 class="h6 text-white mb-0">Sneaky Recurring Subscriptions</h5>
+            </div>
+            <p class="text-secondary small mb-0">
+              Web tools let you convert 1 file, then lock you behind $12-$20/month automatic subscriptions. DropZone is a single $24.99 payment ($19.99 with code) for lifetime use.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card card-dz p-3 h-100">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="p-2 rounded bg-primary bg-opacity-10 text-primary fs-4"><i class="bi bi-wifi-off"></i></div>
+              <h5 class="h6 text-white mb-0">Zero Offline Capability</h5>
+            </div>
+            <p class="text-secondary small mb-0">
+              On an airplane, in transit, or behind a secure office firewall? Web converters fail completely. DropZone runs 100% locally on your computer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLAGSHIP FEATURE DEEP DIVE: PDF TO WORD THAT ACTUALLY WORKS -->
+  <section id="pdf-to-word" class="py-5">
+    <div class="container py-3">
+      <div class="text-center mx-auto mb-4" style="max-width: 720px;">
+        <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-3 py-1 rounded-pill small fw-semibold mb-2">
+          <i class="bi bi-star-fill text-warning me-1"></i> Flagship Feature
+        </span>
+        <h2 class="display-6 fw-bold text-white mb-2">
+          PDF → Word That Actually Works.
+        </h2>
+        <p class="text-secondary">
+          Converting a PDF to Word sounds simple—until you open the result in other software.
+          <strong>Tables shift. Columns break. Fonts change. Rows get scrambled.</strong> Here is how DropZone solves it.
+        </p>
+      </div>
+
+      <!-- Side-by-Side Comparison Container -->
+      <div class="card card-dz overflow-hidden mb-4">
+        <!-- Switcher Header -->
+        <div class="p-3 border-bottom border-secondary border-opacity-25 d-flex flex-wrap justify-content-between align-items-center gap-2 bg-dark">
+          <div>
+            <h5 class="text-white mb-0 fs-6">Document Layout & Table Row Comparison</h5>
+            <span class="text-secondary small">Comparison based on real-world multi-column documents with tables</span>
+          </div>
+          <div class="btn-group btn-group-sm" role="group">
+            <button type="button" class="btn btn-outline-secondary comp-switch-btn active" data-mode="both">Side-by-Side</button>
+            <button type="button" class="btn btn-outline-secondary comp-switch-btn" data-mode="competitor">Other Converters</button>
+            <button type="button" class="btn btn-outline-secondary comp-switch-btn" data-mode="dropzone">DropZone</button>
+          </div>
+        </div>
+
+        <div class="p-3 p-md-4">
+          <div class="row g-3">
+            <!-- Left: Typical Online Converters -->
+            <div id="compCompetitorView" class="col-md-6">
+              <div class="p-3 rounded-3 border border-danger border-opacity-25 bg-danger bg-opacity-10 h-100">
+                <span class="badge bg-danger text-white mb-2"><i class="bi bi-x-circle-fill me-1"></i> Typical Online Converters</span>
+                <h5 class="text-white h6 mb-2">Broken Tables & Smashed Geometry</h5>
+
+                <!-- Broken Visual Simulation -->
+                <div class="p-2 rounded bg-white text-dark small mb-3 border border-danger">
+                  <div class="d-flex justify-content-between border-bottom pb-1 mb-1 text-danger fw-bold">
+                    <span>Invoice #4029 [Layout Broken]</span>
+                    <span>Error</span>
+                  </div>
+                  <div class="p-1 border border-danger border-dashed text-danger font-monospace small mb-1">
+                    [Table row collapsed into 3 disconnected text boxes]
+                  </div>
+                  <div class="text-secondary small">
+                    Fonts substituted with generic fallbacks. Manual reformatting required.
+                  </div>
+                </div>
+
+                <ul class="list-unstyled text-secondary small mb-0">
+                  <li class="mb-1"><i class="bi bi-x text-danger fw-bold fs-5 align-middle"></i> <strong>Merged table rows fail:</strong> Cells shift and text overflows outside lines.</li>
+                  <li class="mb-1"><i class="bi bi-x text-danger fw-bold fs-5 align-middle"></i> <strong>Font substitution:</strong> Crisp document styles replaced with basic fallbacks.</li>
+                  <li class="mb-1"><i class="bi bi-x text-danger fw-bold fs-5 align-middle"></i> <strong>Locked boxes:</strong> Text trapped in rigid frames rather than editable paragraphs.</li>
+                  <li class="mb-0"><i class="bi bi-x text-danger fw-bold fs-5 align-middle"></i> <strong>Cloud exposure:</strong> Your private document uploaded to an unknown server.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Right: DropZone Local Engine -->
+            <div id="compDropzoneView" class="col-md-6">
+              <div class="p-3 rounded-3 border border-success border-opacity-25 bg-success bg-opacity-10 h-100">
+                <span class="badge bg-success text-white mb-2"><i class="bi bi-check-circle-fill me-1"></i> DropZone Local DOCX Engine</span>
+                <h5 class="text-white h6 mb-2">Identical Layout, Fonts & Real Table Rows</h5>
+
+                <!-- Clean Visual Simulation -->
+                <div class="p-2 rounded bg-white text-dark small mb-3 border border-success">
+                  <div class="d-flex justify-content-between border-bottom pb-1 mb-1 text-success fw-bold">
+                    <span>Invoice #4029 [Pristine DOCX]</span>
+                    <span>Ready</span>
+                  </div>
+                  <table class="table table-sm table-bordered mb-1 small">
+                    <thead class="table-light">
+                      <tr>
+                        <th>Item Description</th>
+                        <th>Qty</th>
+                        <th>Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Enterprise Consultation</td>
+                        <td>40 hrs</td>
+                        <td><strong>$5,000.00</strong></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="text-success small fw-semibold">
+                    ✓ Clean editable Word table. Exact fonts, zero manual cleanup needed.
+                  </div>
+                </div>
+
+                <ul class="list-unstyled text-secondary small mb-0">
+                  <li class="mb-1"><i class="bi bi-check2 text-success fw-bold fs-5 align-middle"></i> <strong>Table row & cell integrity:</strong> Retains row heights, borders, and column alignments.</li>
+                  <li class="mb-1"><i class="bi bi-check2 text-success fw-bold fs-5 align-middle"></i> <strong>Font & style retention:</strong> Preserves hierarchy, weights, and clean paragraph flow.</li>
+                  <li class="mb-1"><i class="bi bi-check2 text-success fw-bold fs-5 align-middle"></i> <strong>True editable DOCX:</strong> Real paragraphs you can edit naturally in MS Word.</li>
+                  <li class="mb-0"><i class="bi bi-check2 text-success fw-bold fs-5 align-middle"></i> <strong>100% local:</strong> Private contracts never leave your computer.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gumroad Graphic Embed -->
+          <div class="mt-4 pt-3 border-top border-secondary border-opacity-25 text-center">
+            <h6 class="text-white mb-2"><i class="bi bi-image text-primary me-1"></i> Real DropZone PDF to Word Conversion Preview</h6>
+            <div class="rounded-3 overflow-hidden border border-secondary border-opacity-25 d-inline-block shadow-sm" style="max-width: 760px;">
+              <img src="assets/images/pdf_comparison_gumroad.png" alt="PDF to Word comparison screenshot" class="img-fluid">
+            </div>
+            <p class="text-secondary small mt-2 mb-0">
+              * Optimized for digital, text-based PDFs. Scanned/OCR PDF conversion is planned for future major updates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVACY FIRST: 1-CLICK METADATA STRIPPER -->
+  <section id="privacy-metadata" class="py-5 border-top border-bottom border-dark" style="background: #0b1322;">
+    <div class="container py-3">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6">
+          <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-3 py-1 rounded-pill small fw-semibold mb-2">
+            <i class="bi bi-shield-shaded me-1"></i> Essential Privacy Armor
+          </span>
+          <h2 class="h2 fw-bold text-white mb-2">
+            Strip Hidden Metadata Before You Share Anything
+          </h2>
+          <p class="text-secondary small mb-3">
+            Photos, PDFs, and documents carry hidden technical fingerprints you don't see when viewing them. 
+            DropZone lets you scrub them clean in milliseconds before you send files to clients or post them online.
+          </p>
+
+          <div class="card card-dz p-3 mb-3">
+            <h6 class="text-white mb-2"><i class="bi bi-exclamation-triangle text-warning me-1"></i> What Is Hiding In Your Files Right Now?</h6>
+            <ul class="list-unstyled text-secondary small mb-0">
+              <li class="mb-1"><i class="bi bi-geo-alt-fill text-danger me-1"></i> <strong>GPS Coordinates:</strong> Pinpoints the exact home or office where the photo was shot.</li>
+              <li class="mb-1"><i class="bi bi-phone text-danger me-1"></i> <strong>Device & Hardware Serials:</strong> Identifies phone model, camera serial, and OS build.</li>
+              <li class="mb-1"><i class="bi bi-clock-history text-danger me-1"></i> <strong>Timestamps & Edit History:</strong> Shows when the file was created and software revisions.</li>
+              <li class="mb-0"><i class="bi bi-person-badge text-danger me-1"></i> <strong>Author & Machine Tags:</strong> Exposes user account names and internal file paths.</li>
+            </ul>
+          </div>
+
+          <p class="text-secondary small mb-0">
+            With DropZone, click <strong>"Remove Metadata"</strong> and share with confidence—without accidentally revealing your location or identity.
+          </p>
+        </div>
+
+        <!-- Interactive EXIF Demo Inspector -->
+        <div class="col-lg-6">
+          <div class="card card-dz p-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h6 class="text-white mb-0"><i class="bi bi-search text-primary me-1"></i> Interactive EXIF Inspector Demo</h6>
+              <span id="metaStatusBadge" class="badge bg-danger text-white py-1 px-2">Private EXIF Data Exposed</span>
+            </div>
+
+            <p class="text-secondary small mb-2">Simulated file: <code>IMG_Vacation_Document.jpg</code></p>
+
+            <!-- Exposed State -->
+            <div id="metaExposedList" class="p-2 rounded bg-dark border border-secondary border-opacity-25 font-monospace small mb-3">
+              <div class="d-flex justify-content-between py-1 border-bottom border-dark">
+                <span class="text-secondary">GPS Location:</span>
+                <span class="text-danger fw-semibold">37.7749° N, 122.4194° W</span>
+              </div>
+              <div class="d-flex justify-content-between py-1 border-bottom border-dark">
+                <span class="text-secondary">Device Serial:</span>
+                <span class="text-danger fw-semibold">Apple iPhone 15 Pro #DNX90218</span>
+              </div>
+              <div class="d-flex justify-content-between py-1 border-bottom border-dark">
+                <span class="text-secondary">Author Username:</span>
+                <span class="text-danger fw-semibold">ASUS-PC\AdminUser</span>
+              </div>
+              <div class="d-flex justify-content-between py-1 border-bottom border-dark">
+                <span class="text-secondary">Timestamp:</span>
+                <span class="text-danger fw-semibold">2026-09-14 14:22:08 GMT</span>
+              </div>
+            </div>
+
+            <!-- Cleaned State -->
+            <div id="metaCleanedList" class="p-2 rounded bg-dark border border-success border-opacity-25 font-monospace small mb-3 d-none">
+              <div class="d-flex justify-content-between py-1 border-bottom border-dark">
+                <span class="text-secondary">GPS Location:</span>
+                <span class="text-success fw-semibold">[STRIPPED / CLEAN]</span>
+              </div>
+              <div class="d-flex justify-content-between py-1 border-bottom border-dark">
+                <span class="text-secondary">Device Serial:</span>
+                <span class="text-success fw-semibold">[STRIPPED / CLEAN]</span>
+              </div>
+              <div class="d-flex justify-content-between py-1 border-bottom border-dark">
+                <span class="text-secondary">Author Username:</span>
+                <span class="text-success fw-semibold">[STRIPPED / CLEAN]</span>
+              </div>
+              <div class="d-flex justify-content-between py-1 border-bottom border-dark">
+                <span class="text-secondary">Image Pixels:</span>
+                <span class="text-success fw-semibold">100% Quality Preserved</span>
+              </div>
+            </div>
+
+            <button id="metaCleanToggle" class="btn btn-primary btn-sm w-100 py-2 fw-semibold">
+              <i class="bi bi-shield-slash-fill me-1"></i> Strip Metadata Locally Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALL-IN-ONE TOOLKIT: Categorized Breakdown -->
+  <section id="all-features" class="py-5">
+    <div class="container py-3">
+      <div class="text-center mx-auto mb-4" style="max-width: 680px;">
+        <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-3 py-1 rounded-pill small fw-semibold mb-2">Toolkit Overview</span>
+        <h2 class="display-6 fw-bold text-white mb-2">Everything in One Fast Desktop App</h2>
+        <p class="text-secondary small">Replace bookmarks for 5 different ad-riddled websites with one unified native desktop app.</p>
+      </div>
+
+      <!-- 4 Category Cards -->
+      <div class="row g-3">
+        <!-- PDF Tools -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-dz p-3 h-100">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="p-2 rounded bg-primary bg-opacity-10 text-primary fs-5"><i class="bi bi-file-earmark-pdf"></i></div>
+              <h5 class="h6 text-white mb-0">PDF Suite</h5>
+            </div>
+            <ul class="list-unstyled text-secondary small mb-0">
+              <li class="py-1 border-bottom border-dark"><i class="bi bi-check2 text-primary me-1"></i> PDF to Word (DOCX)</li>
+              <li class="py-1 border-bottom border-dark"><i class="bi bi-check2 text-primary me-1"></i> Compress PDFs Locally</li>
+              <li class="py-1 border-bottom border-dark"><i class="bi bi-check2 text-primary me-1"></i> Merge Multiple PDFs</li>
+              <li class="py-1 border-bottom border-dark"><i class="bi bi-check2 text-primary me-1"></i> Split PDF Pages</li>
+              <li class="py-1 border-bottom border-dark"><i class="bi bi-check2 text-primary me-1"></i> Extract Page Ranges</li>
+              <li class="py-1"><i class="bi bi-check2 text-primary me-1"></i> Rotate Pages (90°/180°)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Image Tools -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-dz p-3 h-100">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="p-2 rounded bg-primary bg-opacity-10 text-primary fs-5"><i class="bi bi-image"></i></div>
+              <h5 class="h6 text-white mb-0">Image Studio</h5>
+            </div>
+            <ul class="list-unstyled text-secondary small mb-0">
+              <li class="py-1 border-bottom border-dark"><i class="bi bi-check2 text-primary me-1"></i> PNG, JPG, WebP, ICO</li>
+              <li class="py-1 border-bottom border-dark"><i class="bi bi-check2 text-primary me-1"></i> BMP, TIFF & GIF Support</li>
+              <li class="py-1 border-bottom border-dark"><i class="bi bi-check2 text-primary me-1"></i> Lossless Compression</li>
+              <li class="py-1 border-bottom border-dark"><i class="bi bi-check2 text-primary me-1"></i> Bulk Image Resizing</li>
+              <li class="py-1 border-bottom border-dark"><i class="bi bi-check2 text-primary me-1"></i> Windows .ico Generator</li>
+              <li class="py-1"><i class="bi bi-check2 text-primary me-1"></i> Strip EXIF Metadata</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Video & Audio -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-dz p-3 h-100">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="p-2 rounded bg-primary bg-opacity-10 text-primary fs-5"><i class="bi bi-camera-video"></i></div>
+              <h5 class="h6 text-white mb-0">Video & Audio</h5>
+            </div>
+            <ul class="list-unstyled text-secondary small mb-0">
+              <li class="py-1 border-bottom border-dark"><i class="bi bi-check2 text-primary me-1"></i> Local H.264 Video Encode</li>
+              <li class="py-1 border-bottom border-dark"><i class="bi bi-check2 text-primary me-1"></i> Compress Large MP4 Files</li>
+              <li class="py-1 border-bottom border-dark"><i class="bi bi-check2 text-primary me-1"></i> Extract Audio from Video</li>
+              <li class="py-1 border-bottom border-dark"><i class="bi bi-check2 text-primary me-1"></i> MP3, WAV, AAC, FLAC</li>
+              <li class="py-1 border-bottom border-dark"><i class="bi bi-check2 text-primary me-1"></i> OGG Audio Conversion</li>
+              <li class="py-1"><i class="bi bi-check2 text-primary me-1"></i> Audio Bitrate Compression</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Utilities -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-dz p-3 h-100">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="p-2 rounded bg-primary bg-opacity-10 text-primary fs-5"><i class="bi bi-qr-code"></i></div>
+              <h5 class="h6 text-white mb-0">Developer & Tools</h5>
+            </div>
+            <ul class="list-unstyled text-secondary small mb-0">
+              <li class="py-1 border-bottom border-dark"><i class="bi bi-check2 text-primary me-1"></i> Offline QR Code Maker</li>
+              <li class="py-1 border-bottom border-dark"><i class="bi bi-check2 text-primary me-1"></i> Web Favicon Package Suite</li>
+              <li class="py-1 border-bottom border-dark"><i class="bi bi-check2 text-primary me-1"></i> site.webmanifest Builder</li>
+              <li class="py-1 border-bottom border-dark"><i class="bi bi-check2 text-primary me-1"></i> Images to PDF Compiler</li>
+              <li class="py-1 border-bottom border-dark"><i class="bi bi-check2 text-primary me-1"></i> 100% Offline Workflow</li>
+              <li class="py-1"><i class="bi bi-check2 text-primary me-1"></i> No Ad Trackers or Telemetry</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOT GALLERY -->
+  <section class="py-5 border-top border-bottom border-dark" style="background: #0b1322;">
+    <div class="container py-3">
+      <div class="text-center mx-auto mb-4" style="max-width: 680px;">
+        <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-3 py-1 rounded-pill small fw-semibold mb-2">Real Interface</span>
+        <h2 class="h2 fw-bold text-white mb-2">Simple, Clean & Fast</h2>
+        <p class="text-secondary small">Explore the real desktop application screenshots.</p>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-dz p-2 text-center h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#screenshotModal" data-lightbox-src="assets/screenshots/app_home.png" data-lightbox-title="DropZone — Dashboard & Local Activity">
+            <img src="assets/screenshots/app_home.png" alt="Dashboard" class="img-fluid rounded-2 mb-2">
+            <h6 class="text-white small mb-0">Dashboard & Local Stats</h6>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-dz p-2 text-center h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#screenshotModal" data-lightbox-src="assets/screenshots/app_images.png" data-lightbox-title="DropZone — Images Conversion & Favicons">
+            <img src="assets/screenshots/app_images.png" alt="Images View" class="img-fluid rounded-2 mb-2">
+            <h6 class="text-white small mb-0">Image Tools & Favicons</h6>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-dz p-2 text-center h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#screenshotModal" data-lightbox-src="assets/screenshots/app_pdfs.png" data-lightbox-title="DropZone — PDF Management Suite">
+            <img src="assets/screenshots/app_pdfs.png" alt="PDF Tools" class="img-fluid rounded-2 mb-2">
+            <h6 class="text-white small mb-0">PDF to Word, Merge & Split</h6>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <div class="card card-dz p-2 text-center h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#screenshotModal" data-lightbox-src="assets/screenshots/app_videos.png" data-lightbox-title="DropZone — Local Video Compression & Audio">
+            <img src="assets/screenshots/app_videos.png" alt="Videos and Audio" class="img-fluid rounded-2 mb-2">
+            <h6 class="text-white small mb-0">Local Video H.264 & Audio Extractor</h6>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <div class="card card-dz p-2 text-center h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#screenshotModal" data-lightbox-src="assets/screenshots/app_modal_convert.png" data-lightbox-title="DropZone — Fast Format Selection Modal">
+            <img src="assets/screenshots/app_modal_convert.png" alt="Convert Modal" class="img-fluid rounded-2 mb-2">
+            <h6 class="text-white small mb-0">Direct Format Selection Dialog</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshot Modal (Lightbox) -->
+  <div class="modal fade" id="screenshotModal" tabindex="-1" aria-labelledby="screenshotModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content bg-dark border border-secondary text-white">
+        <div class="modal-header border-secondary py-2">
+          <h5 class="modal-title small" id="screenshotModalLabel">DropZone Screenshot</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0 text-center bg-black">
+          <img id="screenshotModalImage" src="" alt="Full App Screenshot" class="img-fluid w-100" style="max-height: 80vh; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMPARISON TABLE SECTION -->
+  <section id="comparison" class="py-5">
+    <div class="container py-3">
+      <div class="text-center mx-auto mb-4" style="max-width: 680px;">
+        <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-3 py-1 rounded-pill small fw-semibold mb-2">Value Comparison</span>
+        <h2 class="display-6 fw-bold text-white mb-2">Why DropZone Wins On Price and Privacy</h2>
+        <p class="text-secondary small">Compare DropZone against costly Adobe subscriptions and privacy-compromising online web converters.</p>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-dark table-bordered border-secondary border-opacity-25 align-middle mb-0 text-center">
+          <thead>
+            <tr class="table-secondary text-white">
+              <th class="text-start py-3" style="width: 34%;">Feature / Capability</th>
+              <th class="bg-primary text-white py-3" style="width: 26%;">
+                <div class="fs-6 fw-bold">DropZone</div>
+                <div class="badge bg-white text-primary mt-1">$19.99 with Code</div>
+              </th>
+              <th class="py-3" style="width: 20%;">
+                <div class="small fw-bold text-secondary">Adobe Acrobat Pro</div>
+                <div class="small text-secondary">$239.88 / year</div>
+              </th>
+              <th class="py-3" style="width: 20%;">
+                <div class="small fw-bold text-secondary">Cloud Web Converters</div>
+                <div class="small text-secondary">$108 - $180 / year</div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-start fw-medium text-white">Pricing Model</td>
+              <td class="bg-primary bg-opacity-10 text-success fw-bold">Pay Once ($19.99 with Code) · Lifetime</td>
+              <td class="text-danger small">Recurring $19.99 / mo</td>
+              <td class="text-danger small">Recurring $9 - $15 / mo</td>
+            </tr>
+            <tr>
+              <td class="text-start fw-medium text-white">File Privacy & Storage</td>
+              <td class="bg-primary bg-opacity-10 text-success"><i class="bi bi-shield-check text-success me-1"></i> 100% Local (Never leaves PC)</td>
+              <td class="small text-secondary">Synced to Adobe Cloud</td>
+              <td class="text-danger small"><i class="bi bi-x-circle text-danger me-1"></i> Uploaded to 3rd party servers</td>
+            </tr>
+            <tr>
+              <td class="text-start fw-medium text-white">PDF to Word Table Row Fidelity</td>
+              <td class="bg-primary bg-opacity-10 text-success fw-semibold">High Precision (Table rows intact)</td>
+              <td class="small text-secondary">Good (Proprietary engine)</td>
+              <td class="text-danger small">Poor (Columns frequently shift)</td>
+            </tr>
+            <tr>
+              <td class="text-start fw-medium text-white">Works Offline Without Internet</td>
+              <td class="bg-primary bg-opacity-10 text-success"><i class="bi bi-check-lg text-success me-1"></i> Yes, 100% Offline</td>
+              <td class="small text-secondary">Partial (requires online check-in)</td>
+              <td class="text-danger small"><i class="bi bi-x-circle text-danger me-1"></i> No (Requires web upload)</td>
+            </tr>
+            <tr>
+              <td class="text-start fw-medium text-white">EXIF / Metadata Stripper</td>
+              <td class="bg-primary bg-opacity-10 text-success"><i class="bi bi-check-lg text-success me-1"></i> Included Built-in</td>
+              <td class="small text-secondary">Complex manual menus</td>
+              <td class="text-danger small"><i class="bi bi-x-circle text-danger me-1"></i> No dedicated cleaner</td>
+            </tr>
+            <tr>
+              <td class="text-start fw-medium text-white">Video & Audio Tools (H.264 & MP3)</td>
+              <td class="bg-primary bg-opacity-10 text-success"><i class="bi bi-check-lg text-success me-1"></i> Included Built-in</td>
+              <td class="text-danger small">Requires extra Premiere apps</td>
+              <td class="text-danger small">Separate monthly subscriptions</td>
+            </tr>
+            <tr>
+              <td class="text-start fw-medium text-white">Offline QR Code Generator</td>
+              <td class="bg-primary bg-opacity-10 text-success"><i class="bi bi-check-lg text-success me-1"></i> Included Built-in</td>
+              <td class="text-danger small"><i class="bi bi-x-circle text-danger me-1"></i> No</td>
+              <td class="text-danger small">Ad-supported websites</td>
+            </tr>
+            <tr>
+              <td class="text-start fw-medium text-white">File Upload Caps & Waiting Queues</td>
+              <td class="bg-primary bg-opacity-10 text-success fw-semibold">Zero limits · Unlimited local use</td>
+              <td class="small text-secondary">Unlimited</td>
+              <td class="text-danger small">Strict file size caps & queues</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING SECTION (BIG ATTENTION DISCOUNT SHOWCASE) -->
+  <section id="pricing" class="py-5 border-top border-bottom border-dark" style="background: #0b1322;">
+    <div class="container py-3">
+      <div class="text-center mx-auto mb-4" style="max-width: 680px;">
+        <span class="badge-big-sale mb-2 d-inline-block"><i class="bi bi-fire anim-flame me-1"></i> SPECIAL 20% DISCOUNT</span>
+        <h2 class="display-6 fw-bold text-white mb-2">One Payment. No Subscription.</h2>
+        <p class="text-secondary small">Pay once. Keep using DropZone forever. All tools included.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-7 col-xl-6">
+          <div class="card card-dz border-primary p-4 text-start shadow-lg position-relative overflow-hidden">
+            
+            <!-- ATTENTION: WOW BIG SELL COUPON BOX -->
+            <div class="coupon-box mb-4 text-center">
+              <div class="d-flex align-items-center justify-content-center gap-2 mb-2">
+                <span class="badge-big-sale"><i class="bi bi-percent"></i> 20% OFF COUPON</span>
+                <span class="text-warning small fw-bold"><i class="bi bi-clock-history"></i> Only until 15 Oct 2026</span>
+              </div>
+              <div class="d-flex flex-wrap align-items-center justify-content-center gap-2">
+                <span class="text-white small">Discount Code:</span>
+                <span class="coupon-code-badge">DROPZONE2026</span>
+                <button class="copy-coupon-btn" title="Click to copy code"><i class="bi bi-clipboard me-1"></i> Copy Code</button>
+              </div>
+              <div class="small text-secondary mt-2">
+                Enter code <strong class="text-white">DROPZONE2026</strong> at Gumroad checkout to slash price to <strong class="text-success fs-6">$19.99</strong>!
+              </div>
+            </div>
+
+            <!-- Price Breakdown Header -->
+            <div class="d-flex justify-content-between align-items-center border-bottom border-secondary border-opacity-25 pb-3 mb-3">
+              <div>
+                <h3 class="h5 text-white mb-1">Full Desktop License</h3>
+                <span class="badge bg-success text-white small"><i class="bi bi-patch-check-fill me-1"></i> Lifetime License</span>
+              </div>
+              <div class="text-end">
+                <div class="small text-secondary text-decoration-line-through">Regular: $34.99</div>
+                <div class="small text-muted text-decoration-line-through">Launch: $24.99</div>
+                <div class="h2 text-success fw-bold mb-0">$19.99</div>
+                <div class="small text-warning fw-bold">With 20% Coupon Code</div>
+              </div>
+            </div>
+
+            <h6 class="text-white small mb-2">Your purchase includes:</h6>
+            <div class="row g-2 mb-3 text-secondary small">
+              <div class="col-sm-6"><i class="bi bi-check2 text-primary me-1"></i> PDF to Word (DOCX)</div>
+              <div class="col-sm-6"><i class="bi bi-check2 text-primary me-1"></i> PDF Compress & Merge</div>
+              <div class="col-sm-6"><i class="bi bi-check2 text-primary me-1"></i> 7+ Image Format Converter</div>
+              <div class="col-sm-6"><i class="bi bi-check2 text-primary me-1"></i> EXIF Metadata Remover</div>
+              <div class="col-sm-6"><i class="bi bi-check2 text-primary me-1"></i> Video H.264 Compressor</div>
+              <div class="col-sm-6"><i class="bi bi-check2 text-primary me-1"></i> Audio Converter & Extractor</div>
+              <div class="col-sm-6"><i class="bi bi-check2 text-primary me-1"></i> Windows .ico & Favicon Maker</div>
+              <div class="col-sm-6"><i class="bi bi-check2 text-primary me-1"></i> Offline QR Code Generator</div>
+              <div class="col-sm-6"><i class="bi bi-check2 text-primary me-1"></i> Future Version Updates</div>
+              <div class="col-sm-6"><i class="bi bi-check2 text-primary me-1"></i> Zero Monthly Fees</div>
+            </div>
+
+            <!-- Gumroad Direct Checkout Link Button -->
+            <a href="https://salmyachraf.gumroad.com/l/gzfxu?wanted=true" target="_blank" rel="noopener" class="btn btn-primary w-100 py-2.5 fw-semibold mb-3 shadow">
+              <i class="bi bi-bag-check-fill me-1"></i> Claim 20% Off & Checkout ($19.99)
+            </a>
+
+            <!-- 30-Day Guarantee -->
+            <div class="p-2 rounded bg-dark border border-secondary border-opacity-25 d-flex align-items-center gap-2 small">
+              <i class="bi bi-shield-check text-success fs-4"></i>
+              <div>
+                <strong class="text-white">30-Day Money-Back Guarantee:</strong>
+                <span class="text-secondary">If DropZone doesn't fit your needs, email <code>digispher25@gmail.com</code> within 30 days for a full refund—no questions asked.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="py-5">
+    <div class="container py-3">
+      <div class="text-center mx-auto mb-4" style="max-width: 680px;">
+        <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-3 py-1 rounded-pill small fw-semibold mb-2">FAQ</span>
+        <h2 class="display-6 fw-bold text-white mb-2">Frequently Asked Questions</h2>
+        <p class="text-secondary small">Everything you need to know about DropZone and your purchase.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion accordion-dz" id="faqAccordion">
+            <!-- Item 1: How to use discount code -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingZero">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
+                  How do I use the 20% discount code DROPZONE2026?
+                </button>
+              </h2>
+              <div id="collapseZero" class="accordion-collapse collapse show" aria-labelledby="headingZero" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Click the <strong>"Copy Code"</strong> button anywhere on this page to copy <code>DROPZONE2026</code>. When you click checkout on Gumroad, paste the code into the discount box to instantly bring the price down from $24.99 to <strong>$19.99</strong>. This promotional offer expires on <strong>October 15, 2026</strong>.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Does DropZone require an active internet connection?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  No. Once DropZone is installed on your computer, all file processing happens 100% locally on your machine. You can convert PDFs, strip metadata, or compress videos while on a flight, traveling with zero cell signal, or inside an isolated office network.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  How does DropZone handle complex tables in PDF to Word?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Most online converters fail because they convert table lines into disconnected floating text boxes. DropZone reconstructs the actual document geometry into native Microsoft Word (.docx) tables with aligned rows, cells, and fonts. It is optimized for digital, text-based PDFs.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Is it really a one-time purchase with no recurring fees?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes! There are no monthly charges, no recurring subscriptions, and no surprise renewals. You pay once and keep using DropZone indefinitely.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  What metadata is stripped when I clean images or files?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  DropZone strips hidden EXIF, IPTC, and XMP metadata—including your GPS location coordinates, device serial numbers, camera lens models, timestamps, and author tags—leaving clean, privacy-safe image pixels ready for public sharing.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  How does the 30-day refund policy work?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Try DropZone risk-free. If it doesn't work for you, simply contact us within 30 days of purchase at <code>digispher25@gmail.com</code> for a full refund—no questions asked and no hassle.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AFFILIATE PROGRAM SECTION -->
+  <section id="affiliates" class="py-5 border-top border-bottom border-dark" style="background: #0b1322;">
+    <div class="container py-3">
+      <div class="text-center mx-auto mb-4" style="max-width: 720px;">
+        <span class="badge bg-success bg-opacity-25 border border-success border-opacity-50 px-3 py-1.5 rounded-pill small fw-bold mb-2" style="color: #4ade80;">
+          <i class="bi bi-cash-coin me-1"></i> Partner With DropZone
+        </span>
+        <h2 class="display-6 fw-bold text-white mb-2">Earn 25% Revenue on Every Sale</h2>
+        <p class="text-secondary small">
+          Recommend DropZone to your audience of creators, developers, lawyers, accountants, or privacy-conscious users and get paid <strong>25% commission</strong> directly on Gumroad.
+        </p>
+      </div>
+
+      <div class="row g-3 justify-content-center mb-4">
+        <!-- Benefit 1 -->
+        <div class="col-md-4">
+          <div class="card card-dz p-3 h-100 text-center">
+            <div class="rounded-circle bg-success bg-opacity-10 text-success p-3 mx-auto mb-3 d-inline-flex">
+              <i class="bi bi-percent fs-3"></i>
+            </div>
+            <h5 class="h6 text-white mb-2">25% Generous Payout</h5>
+            <p class="text-secondary small mb-0">
+              Earn generous revenue on every single software license purchased through your unique link.
+            </p>
+          </div>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="col-md-4">
+          <div class="card card-dz p-3 h-100 text-center">
+            <div class="rounded-circle bg-primary bg-opacity-10 text-primary p-3 mx-auto mb-3 d-inline-flex">
+              <i class="bi bi-graph-up-arrow fs-3"></i>
+            </div>
+            <h5 class="h6 text-white mb-2">High Conversion Rate</h5>
+            <p class="text-secondary small mb-0">
+              A high-demand impulse price point ($19.99 - $24.99) with 30-day money-back guarantee converts visitors quickly.
+            </p>
+          </div>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="col-md-4">
+          <div class="card card-dz p-3 h-100 text-center">
+            <div class="rounded-circle bg-info bg-opacity-10 text-info p-3 mx-auto mb-3 d-inline-flex">
+              <i class="bi bi-wallet2 fs-3"></i>
+            </div>
+            <h5 class="h6 text-white mb-2">Instant Tracking & Payouts</h5>
+            <p class="text-secondary small mb-0">
+              Powered by Gumroad's trusted affiliate system with automated payouts directly to your PayPal or bank account.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Affiliate CTA Box -->
+      <div class="card card-dz p-4 text-center mx-auto border-success border-opacity-50 shadow-lg" style="max-width: 680px;">
+        <h4 class="h5 text-white mb-2"><i class="bi bi-stars text-warning me-1"></i> Ready to Start Earning?</h4>
+        <p class="text-secondary small mb-3">
+          Sign up takes less than 60 seconds on Gumroad. Get your custom affiliate link immediately and start sharing.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+          <a href="https://salmyachraf.gumroad.com/affiliates" target="_blank" rel="noopener" class="btn btn-success px-4 py-2.5 fw-semibold shadow">
+            <i class="bi bi-link-45deg fs-5 align-middle me-1"></i> Join Affiliate Program (25% Commission) <i class="bi bi-box-arrow-up-right ms-1 small"></i>
+          </a>
+        </div>
+        <div class="text-secondary small mt-2">
+          <i class="bi bi-shield-check text-success me-1"></i> Instant approval on Gumroad · No minimum audience required
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="py-5 text-center border-top border-dark">
+    <div class="container py-3">
+      <div class="mx-auto" style="max-width: 680px;">
+        <span class="badge-big-sale mb-2 d-inline-block"><i class="bi bi-fire anim-flame me-1"></i> CODE: DROPZONE2026</span>
+        <h2 class="display-6 fw-bold text-white mb-2">
+          Stop Uploading Files Just to Get Simple Things Done.
+        </h2>
+        <p class="text-secondary small mb-3">
+          DropZone puts the tools on your computer — where your files already are.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-2">
+          <a href="https://salmyachraf.gumroad.com/l/gzfxu?wanted=true" target="_blank" rel="noopener" class="btn btn-primary px-4 py-2 fw-semibold">
+            <i class="bi bi-download me-1"></i> Get DropZone for $19.99
+          </a>
+          <button class="btn btn-outline-light px-3 py-2 copy-coupon-btn fw-semibold">
+            <i class="bi bi-clipboard me-1"></i> Copy Code DROPZONE2026
+          </button>
+        </div>
+        <div class="text-secondary small mt-2">
+          <i class="bi bi-shield-check text-success me-1"></i> One payment · No subscription · Windows 10 & 11 compatible · Coupon valid until 15 Oct 2026
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-3 bg-dark border-top border-secondary border-opacity-25 text-secondary small">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <div class="d-flex align-items-center gap-2">
+        <img src="assets/images/dropzone_logo.svg" alt="DropZone" width="22" height="26">
+        <span class="text-white fw-bold">DropZone</span>
+        <span>by DigiSpher</span>
+      </div>
+      <div>
+        Convert. Compress. Clean. Keep it local. © 2026 DigiSpher.
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <a href="https://salmyachraf.gumroad.com/affiliates" target="_blank" rel="noopener" class="btn btn-outline-success btn-sm py-0 px-2">
+          <i class="bi bi-cash-coin me-1"></i> Affiliate Program (25%)
+        </a>
+        <a href="https://salmyachraf.gumroad.com/l/gzfxu?wanted=true" target="_blank" rel="noopener" class="btn btn-outline-secondary btn-sm py-0 px-2">
+          Gumroad Store
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STICKY BOTTOM CONVERSION BAR WITH DISCOUNT CODE -->
+  <div id="stickyCtaBar" class="sticky-bar-dz">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap gap-2">
+      <div class="d-flex align-items-center gap-2">
+        <img src="assets/images/dropzone_logo.svg" alt="DropZone" width="24" height="28" class="d-none d-sm-block">
+        <div>
+          <strong class="text-white small">DropZone All-in-One Local Converter</strong>
+          <span class="badge bg-warning bg-opacity-25 text-warning font-monospace small px-2 py-0.5 ms-2">CODE: DROPZONE2026</span>
+          <span class="d-none d-md-inline text-secondary small ms-1">(-20% until Oct 15, 2026)</span>
+        </div>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <button class="btn btn-outline-light btn-sm py-1 px-2 copy-coupon-btn small d-none d-sm-inline-block"><i class="bi bi-clipboard me-1"></i>Copy Code</button>
+        <span class="text-success fw-bold small d-none d-sm-inline">$19.99</span>
+        <a href="https://salmyachraf.gumroad.com/l/gzfxu?wanted=true" target="_blank" rel="noopener" class="btn btn-primary btn-sm px-3 py-1 fw-semibold text-nowrap">
+          <i class="bi bi-bag-check-fill me-1"></i> Get Deal Now
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Custom Logic -->
+  <script src="js/main.js"></script>
+</body>
+</html>

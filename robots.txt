@@ -1,0 +1,6 @@
+# robots.txt for DropZone (Privacy-First Local File Converter)
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://dropzone.app/sitemap.xml
