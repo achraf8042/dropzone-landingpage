@@ -1,74 +1,71 @@
-# DropZone
+# DropSpher by DigiSpher
 
-> DropZone is a privacy-first, 100% offline desktop file converter and utility toolkit for Windows (with macOS and Linux planned). It processes files locally on the user's computer without uploading confidential data to cloud servers.
+> DropSpher is a fast, 100% offline desktop file powerhouse for Windows (with macOS and Linux ready). It processes files locally on the user's computer without uploading confidential data to cloud servers, charging recurring subscriptions, or imposing artificial file size limits.
 
 ## Product Overview
-- **Product Name**: DropZone
+- **Product Name**: DropSpher
 - **Publisher**: DigiSpher (Achraf Salmy)
-- **Primary Value Proposition**: "Your files never leave your computer." Zero cloud uploads, zero recurring subscriptions, and complete offline capability.
-- **License Model**: Lifetime License (Pay once, own forever). No monthly or annual subscriptions.
-- **Retail Price**: $34.99
-- **Launch Price**: $24.99
-- **Promotional Discount**: 20% OFF with code `DROPZONE2026` (reduces price to $19.99, valid through October 15, 2026).
-- **Official Store Link**: https://salmyachraf.gumroad.com/l/gzfxu?wanted=true
-- **Affiliate Program**: 25% recurring commission via Gumroad (https://salmyachraf.gumroad.com/affiliates)
-- **Refund Policy**: 30-day money-back guarantee, no questions asked (contact: digispher25@gmail.com).
+- **Primary Value Proposition**: "Your files never leave your computer." Absolute offline privacy, hardware-accelerated local execution, zero cloud risk.
+- **License Model**: Lifetime License (Pay once, own forever). Zero recurring monthly or annual subscriptions.
+- **Retail Price**: $39.00 (One-Time)
+- **Early Access Price**: $19.99 (Direct special limited launch price, no promo code required)
+- **Official Website**: https://dropspher.digispher.online
+- **Official Store Link**: https://digispher.lemonsqueezy.com/checkout/buy/354c1450-391b-4552-8132-f8652029ecc7
+- **Affiliate Program**: 25% revenue commission on every sale via Gumroad (https://salmyachraf.gumroad.com/affiliates)
+- **Refund Policy**: 30-day money-back guarantee, unconditional (contact: digispher25@gmail.com)
 
 ---
 
-## Core Features & Capabilities
+## 5 Complete Power Suites
 
-### 1. High-Precision PDF to Word (DOCX) Conversion
-- Reconstructs complex digital text-based PDFs into fully editable Microsoft Word (.docx) documents.
-- Solves the primary flaw of competing online converters by preserving:
-  - Exact table rows, cell alignments, and merged cell borders.
-  - Multi-column layouts without overlapping text frames.
-  - Native typography and font hierarchies.
-- 100% offline: confidential financial statements, legal contracts, and NDAs never touch a third-party server.
-- *Note*: Optimized for digital text PDFs. OCR for scanned image PDFs is on the product roadmap.
+### 1. PDF Power Suite
+- **PDF to Word (.docx)**: Reconstructs complex digital text-based PDFs into editable Word documents while preserving genuine table structures, column layouts, headers, footers, and standard typography (Arial, Times New Roman, Calibri, Segoe UI).
+- **PDF to Images**: High-resolution rendering to PNG or JPEG at 150 DPI HD, 200 DPI, or 300 DPI print-ready quality. Supports custom page ranges (e.g., 1-3, 5) and clean white paper backgrounds.
+- **Dual-Engine PDF Compression**: Intelligent stream and font optimization via PikePDF and PyPDF to minimize file sizes without blur.
+- **Merge & Split**: Combine multiple documents in custom order via interactive batch queue, or explode multi-page documents into single sheets.
+- **Extract Pages & Rotate**: Isolate specific page ranges and fix scan orientation with 90°, 180°, or 270° rotation.
+- **Extract Embedded Images & Text**: Pull raw embedded media and extract clean plaintext.
 
-### 2. Privacy First: 1-Click Metadata (EXIF) Stripper
-- Detects and removes sensitive hidden metadata before sharing files publicly:
-  - GPS latitude & longitude coordinates (home/office locations).
-  - Hardware device serials, camera lens identifiers, and smartphone model details.
-  - Timestamps, timezone logs, and software revision trails.
-  - Corporate user accounts and internal filesystem paths.
-- Completely sanitizes files while preserving 100% original pixel and document quality.
+### 2. Image Processing Studio
+- **Universal Multi-Format Conversion**: Fast conversion across PNG, JPEG, WEBP, BMP, TIFF, GIF, and ICO.
+- **Images to PDF**: Combine multiple photos and captures into a unified, clean PDF.
+- **Windows Application Icon Creator (.ico)**: Automatically packages multi-resolution icons (16x16, 32x32, 48x48, 64x64, 128x128, 256x256).
+- **Web Favicon Pack Generator**: Builds `favicon.ico`, multi-size PNGs, and a deployment-ready `site.webmanifest`.
+- **Smart Lossless & Lossy Compression**: Quality percentage sliders with automatic RGB/RGBA transparency preservation.
+- **Image Resizer**: Percentage scaling or precise width/height pixel constraints maintaining aspect ratios.
+- **EXIF & Metadata Scrubber**: Strips hidden GPS coordinates, camera serial numbers, device models, and timestamps.
 
-### 3. Comprehensive PDF Toolset
-- **Compress PDF**: Reduces document footprint locally while keeping text sharp.
-- **Merge PDFs**: Combines multiple PDF files into one neatly organized document.
-- **Split PDF**: Breaks multi-page documents into individual pages.
-- **Extract Pages**: Extracts targeted page numbers or custom page ranges (e.g. 1-3, 5).
-- **Rotate Pages**: Re-orients upside-down or landscape pages (90°, 180°, 270°).
+### 3. Video Suite
+- **Video Transcoder**: Fast conversion across MP4, MKV, AVI, MOV, WEBM, and GIF using bundled, optimized FFmpeg binaries.
+- **Audio Track Extractor**: Rip audio directly into pristine MP3, AAC, WAV, FLAC, or M4A formats.
+- **CRF Video Compression**: Reduce file sizes for Slack, Discord, and email attachments with CRF quality presets and resolution downscaling (Original, 1080p, 720p, 480p).
+- **Video to Animated GIF**: Convert clips to looping GIFs with framerate controls (10, 15, 20, 24, 30 fps).
 
-### 4. Image Studio
-- **Universal Format Conversion**: Supports PNG, JPG, WebP, ICO, BMP, TIFF, and GIF.
-- **Lossless Compression**: Compresses photos without visible quality degradation.
-- **Bulk Resizing**: Batch scales dimensions for web or production.
-- **Windows Icon Generator**: Creates production-ready `.ico` application icons.
-- **Web Favicon Package**: Automatically generates `favicon.ico`, multi-resolution PNGs, and `site.webmanifest`.
-- **Images to PDF**: Compiles multiple photos and screenshots into a single clean PDF document.
+### 4. Audio Studio
+- **Audio Format Converter**: Transcode high-fidelity audio between MP3, AAC, WAV, FLAC, OGG, and M4A.
+- **Audio Bitrate Control**: Compress audio footprints with selectable bitrates (64 kbps voice up to 320 kbps audiophile grade).
 
-### 5. Local Video & Audio Engine
-- **Video Compression**: Encodes locally with H.264 compression to shrink large MP4/MKV files for email and messaging without cloud delays.
-- **Audio Extractor**: Extracts pristine audio tracks directly from video files.
-- **Audio Converter & Compressor**: Converts between MP3, WAV, AAC, FLAC, and OGG formats.
+### 5. Developer & Data Toolbox
+- **CSV to Styled Excel (.xlsx)**: Automated encoding detection (UTF-8, Latin-1, CP1252), delimiter sniffing (comma, semicolon, tab, pipe), intelligent type inference (numbers, dates, booleans), freeze panes, and styled headers.
+- **Excel to CSV**: Export worksheets into clean CSV files, with one-click multi-sheet batch export packaged into a ZIP archive.
+- **Cryptographic Hash Generator**: Instant MD5, SHA-1, SHA-256, and SHA-512 checksums with 1-click clipboard copying.
+- **Base64 Encoder / Decoder**: Encode or decode files and text with support for Standard, URL-Safe, and HTML/CSS Data URI formats.
+- **JSON Formatter & Validator**: Beautify, validate, or minify complex JSON payloads with customizable indentation (2 spaces, 4 spaces, tabs).
+- **Offline QR Code Generator**: Generate high-resolution vector and raster QR codes for URLs, WiFi credentials, and plain text with visual titles.
 
-### 6. Developer & Everyday Utilities
-- **Offline QR Code Generator**: Generates custom, high-resolution QR codes without ad redirects or tracking pixels.
+---
+
+## Architectural & Security Highlights
+- **Interactive Batch Queue**: Dedicated queue cards for staging multiple files, tracking payload size, and removing items.
+- **Before / After Size Transparency**: Color-coded metrics showing input size, output size, bytes saved, and reduction percentage.
+- **Atomic File Safety & In-App Renaming**: Sandboxed temporary write + atomic swap upon success. Original files are never touched on error or cancellation.
+- **Built-In Private Analytics**: Local SQLite history tracking completed operations and megabytes saved—100% private to the machine.
+- **Commercial Anti-Tamper Hardening**: Enterprise security hardening against memory dumping, dynamic debuggers, and tampering.
 
 ---
 
 ## System Requirements
-- **OS**: Windows 10 or Windows 11 (64-bit architecture)
+- **Operating System**: Windows 10 or Windows 11 (64-bit architecture; macOS & Linux ready)
 - **Processor**: Intel or AMD 64-bit CPU
-- **Disk Space**: ~150 MB available storage
-- **Internet Requirement**: Needed only once for initial license activation; all conversion, compression, and metadata operations run completely offline.
-
----
-
-## Marketing & Affiliate Program
-- **Affiliate Commission**: 25% on every referred sale.
-- **Affiliate Sign-Up URL**: https://salmyachraf.gumroad.com/affiliates
-- **Cookie & Payouts**: Automated tracking and direct payouts managed securely by Gumroad.
+- **Storage**: ~150 MB available local disk space
+- **Internet Requirement**: 100% offline for all file processing operations.

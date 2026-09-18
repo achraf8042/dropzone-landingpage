@@ -1,6 +1,23 @@
-# robots.txt for DropZone (Privacy-First Local File Converter)
+# robots.txt for DropSpher by DigiSpher
 User-agent: *
 Allow: /
 
-# Sitemaps
-Sitemap: https://dropzone.app/sitemap.xml
+# Explicit Search Engine Crawler Rules
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Host & Sitemap
+Host: https://dropspher.digispher.online
+Sitemap: https://dropspher.digispher.online/sitemap.xml

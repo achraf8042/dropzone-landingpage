@@ -1,0 +1,12 @@
+/* TEAM */
+Creator: DigiSpher (Achraf Salmy)
+Contact: digispher25@gmail.com
+Product: DropSpher
+Website: https://dropspher.digispher.online
+
+/* SITE */
+Standards: HTML5, CSS3, ES6+
+UI Framework: Bootstrap 5.3 & Bootstrap Icons
+Architecture: 100% Client-Side Privacy Execution
+Privacy Guarantee: Zero Cloud Uploads, Zero Telemetry
+Last Updated: 2026-09-18

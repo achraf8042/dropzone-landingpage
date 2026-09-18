@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://dropspher.digispher.online/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://dropspher.digispher.online/assets/images/dropspher_logo.svg</image:loc>
+      <image:title>DropSpher Official Brand Logo</image:title>
+      <image:caption>DropSpher by DigiSpher privacy-first desktop file powerhouse logo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dropspher.digispher.online/assets/screenshots/app_home.png</image:loc>
+      <image:title>DropSpher Desktop File Powerhouse Interface</image:title>
+      <image:caption>100% offline desktop file converter and productivity tools dashboard</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dropspher.digispher.online/assets/screenshots/app_pdfs.png</image:loc>
+      <image:title>DropSpher PDF Power Suite Interface</image:title>
+      <image:caption>Local PDF to Word DOCX conversion, merge, split, and dual-engine compression</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dropspher.digispher.online/assets/screenshots/app_images.png</image:loc>
+      <image:title>DropSpher Image Processing Studio Interface</image:title>
+      <image:caption>Local image conversion, resizing, Windows icon creator, and EXIF metadata scrubber</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dropspher.digispher.online/assets/screenshots/app_videos.png</image:loc>
+      <image:title>DropSpher Video and Audio Studio Interface</image:title>
+      <image:caption>Local FFmpeg video conversion, CRF compression, and audio transcoding</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dropspher.digispher.online/assets/screenshots/app_modal_convert.png</image:loc>
+      <image:title>DropSpher Fast Format Converter Modal Dialog</image:title>
+      <image:caption>Direct local format selection and batch processing queue</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dropspher.digispher.online/assets/images/pdf_comparison_gumroad.png</image:loc>
+      <image:title>DropSpher PDF to Word Conversion Layout Comparison</image:title>
+      <image:caption>High precision table row and column preservation in DOCX</image:caption>
+    </image:image>
+  </url>
+</urlset>

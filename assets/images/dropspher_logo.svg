@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 74" width="34" height="40" fill="none">
+  <!-- DropSpher Brand Logo: Glowing Local File & Secure Sphere -->
+  <defs>
+    <filter id="dsGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0284c7" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="dsDocGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d7cf2"/>
+      <stop offset="60%" stop-color="#0f4ba3"/>
+      <stop offset="100%" stop-color="#0b2c68"/>
+    </linearGradient>
+    <linearGradient id="dsFoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#1d7cf2"/>
+    </linearGradient>
+    <linearGradient id="sphereGrad" x1="20%" y1="20%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#1d7cf2" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Document Sheet -->
+  <path d="M8 2C4.68629 2 2 4.68629 2 8V66C2 69.3137 4.68629 72 8 72H56C59.3137 72 62 69.3137 62 66V22L42 2H8Z" fill="url(#dsDocGrad)" stroke="#38bdf8" stroke-width="2.2" stroke-linejoin="round" filter="url(#dsGlow)"/>
+
+  <!-- Folded Corner -->
+  <path d="M42 2V20C42 21.1046 42.8954 22 44 22H62L42 2Z" fill="url(#dsFoldGrad)"/>
+
+  <!-- Center Spherical Drop Orbit (DropSpher Emblem) -->
+  <ellipse cx="32" cy="46" rx="16" ry="7" fill="none" stroke="url(#ringGrad)" stroke-width="1.8" transform="rotate(-15 32 46)"/>
+  
+  <!-- Central Sphere Core -->
+  <circle cx="32" cy="44" r="10" fill="url(#sphereGrad)"/>
+  <circle cx="29" cy="40" r="3" fill="#ffffff" fill-opacity="0.55"/>
+
+  <!-- DropSpher "DS" Lettering -->
+  <text x="32" y="48" font-family="'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="11" fill="#ffffff" text-anchor="middle" letter-spacing="-0.5">DS</text>
+</svg>

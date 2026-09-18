@@ -1,0 +1,20 @@
+{
+  "name": "DropSpher — 100% Offline Desktop File Powerhouse",
+  "short_name": "DropSpher",
+  "description": "Fast, 100% offline desktop file powerhouse. Unlimited PDF, image, video, audio, and developer tools without cloud uploads or subscriptions.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#070c18",
+  "theme_color": "#070c18",
+  "categories": ["utilities", "productivity", "photo", "video"],
+  "icons": [
+    {
+      "src": "assets/images/dropspher_logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
