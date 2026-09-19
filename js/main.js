@@ -4,24 +4,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Sticky Navbar & Sticky Conversion Bar Scroll Logic
-  const stickyBar = document.getElementById('stickyCtaBar');
-  const heroSection = document.getElementById('hero');
-
-  window.addEventListener('scroll', () => {
-    const scrollPos = window.scrollY;
-
-    if (heroSection && stickyBar) {
-      const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
-      if (scrollPos > heroBottom - 150) {
-        stickyBar.classList.add('visible');
-      } else {
-        stickyBar.classList.remove('visible');
-      }
-    }
-  });
-
-  // 3. Interactive App Window Simulator (Hero Mockup)
+  // 1. Interactive App Window Simulator (Hero Mockup)
   const mockupTabButtons = document.querySelectorAll('.mockup-tab-btn');
   const appDisplayImg = document.getElementById('appScreenDisplay');
   const appWindowTitle = document.getElementById('appWindowTitle');
