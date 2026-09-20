@@ -943,12 +943,12 @@
                 <h5 class="text-white h6 mb-2">Identical Layout, Fonts & Real Table Rows</h5>
 
                 <!-- Clean Visual Simulation -->
-                <div class="p-2 rounded bg-white text-dark small mb-3 border border-success">
+                <div class="p-2 rounded bg-white text-dark small mb-3 border border-success pdf-mock-doc">
                   <div class="d-flex justify-content-between border-bottom pb-1 mb-1 text-success fw-bold">
                     <span>Invoice #4029 [Pristine DOCX]</span>
                     <span>Ready</span>
                   </div>
-                  <table class="table table-sm table-bordered mb-1 small">
+                  <table class="table table-sm table-bordered mb-1 small" style="color: #111827; background: #ffffff;">
                     <thead class="table-light">
                       <tr>
                         <th>Item Description</th>
@@ -1258,122 +1258,87 @@
     </div>
   </div>
 
-  <!-- VERIFIED CUSTOMER REVIEWS & SOCIAL PROOF -->
-  <section id="reviews" class="py-5 border-top border-bottom border-dark" style="background: #080d1a;">
+  <!-- PRICING SECTION -->
+  <section id="pricing" class="py-5 border-top border-bottom border-dark" style="background: #090e1c;">
     <div class="container py-3">
-      <div class="text-center mx-auto mb-5" style="max-width: 740px;">
-        <span class="badge bg-info bg-opacity-20 text-white border border-info border-opacity-30 px-3 py-1 rounded-pill small fw-bold mb-2">
-          <i class="bi bi-star-fill me-1"></i> 4.9 / 5 Rating (48+ Verified Reviews)
-        </span>
-        <h2 class="display-6 fw-bold text-white mb-2">Trusted by Privacy-First Teams & Professionals</h2>
-        <p class="text-secondary small">
-          Engineers, legal consultants, designers, and financial auditors rely on DropSpher daily for local hardware speed and zero data leak exposure.
-        </p>
+
+      <!-- Section Header -->
+      <div class="text-center mx-auto mb-5" style="max-width: 580px;">
+        <h2 class="fw-bold text-white mb-2" style="font-size: clamp(1.85rem, 4vw, 2.75rem); letter-spacing: -0.01em;">One Payment. Zero Subscriptions.</h2>
+        <p class="text-secondary mb-0" style="font-size: 1rem; line-height: 1.65;">Stop paying $100+/year for fragmented cloud tools. DropSpher is a one-time purchase &mdash; yours forever, fully offline.</p>
       </div>
 
-      <div class="row g-3">
-        <!-- Review 1: Sarah Chen -->
-        <div class="col-md-6 col-lg-3">
-          <div class="card card-dz p-3 h-100 d-flex flex-column justify-content-between">
-            <div>
-              <div class="d-flex align-items-center gap-1 text-info mb-2">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p class="text-secondary small mb-3 fst-italic">
-                "DropSpher solved our strict client confidentiality bottleneck. We deal with NDAs and privileged records that we cannot legally upload to Adobe Cloud or online converters under HIPAA and GDPR. Converts complex PDF tables to Word locally with zero data leaks."
-              </p>
-            </div>
-            <div class="d-flex align-items-center gap-2 pt-2 border-top border-secondary border-opacity-25">
-              <div class="rounded-circle bg-primary bg-opacity-20 text-info fw-bold p-2 small text-center" style="width: 36px; height: 36px; line-height: 20px;">SC</div>
-              <div>
-                <h6 class="text-white small fw-bold mb-0">Sarah Chen</h6>
-                <span class="text-secondary small" style="font-size: 0.75rem;">Legal & Compliance Consultant</span>
-              </div>
-            </div>
+      <!-- Pricing Layout: Features + Price Card -->
+      <div class="row justify-content-center align-items-start g-4">
+
+        <!-- Left: What's included -->
+        <div class="col-lg-6">
+          <div class="pricing-includes-card">
+            <p class="text-white fw-semibold mb-3" style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.1em;">Everything in your license</p>
+            <ul class="list-unstyled pricing-feature-list mb-0">
+              <li><i class="bi bi-check2-circle text-info"></i><span>PDF to Word with real table &amp; font precision</span></li>
+              <li><i class="bi bi-check2-circle text-info"></i><span>300 DPI PDF to Image rendering</span></li>
+              <li><i class="bi bi-check2-circle text-info"></i><span>Dual-engine PDF compression</span></li>
+              <li><i class="bi bi-check2-circle text-info"></i><span>7+ image format converter &amp; batch resizer</span></li>
+              <li><i class="bi bi-check2-circle text-info"></i><span>EXIF &amp; GPS metadata scrubber</span></li>
+              <li><i class="bi bi-check2-circle text-info"></i><span>Video H.264 &amp; CRF compressor (FFmpeg)</span></li>
+              <li><i class="bi bi-check2-circle text-info"></i><span>Audio extractor &amp; format converter</span></li>
+              <li><i class="bi bi-check2-circle text-info"></i><span>CSV to styled Excel (.xlsx) with freeze panes</span></li>
+              <li><i class="bi bi-check2-circle text-info"></i><span>Developer tools &mdash; Hashes, Base64, JSON formatter</span></li>
+              <li><i class="bi bi-check2-circle text-info"></i><span>Offline vector QR code generator</span></li>
+              <li><i class="bi bi-check2-circle text-info"></i><span>Future feature updates &amp; bug fixes included</span></li>
+              <li><i class="bi bi-check2-circle text-info"></i><span>1 personal license &middot; 2 PCs &middot; No cloud. No internet.</span></li>
+            </ul>
           </div>
         </div>
 
-        <!-- Review 2: Marcus Vance -->
-        <div class="col-md-6 col-lg-3">
-          <div class="card card-dz p-3 h-100 d-flex flex-column justify-content-between">
-            <div>
-              <div class="d-flex align-items-center gap-1 text-info mb-2">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
+        <!-- Right: Price Card -->
+        <div class="col-lg-5 col-xl-4">
+          <div class="pricing-main-card">
+
+            <!-- Price Display -->
+            <div class="pricing-price-block">
+              <div class="pricing-was">Regular Price: <span>$39.00</span></div>
+              <div class="pricing-amount">
+                <span class="pricing-currency">$</span>
+                <span class="pricing-number">19</span>
+                <span class="pricing-cents">.99</span>
               </div>
-              <p class="text-secondary small mb-3 fst-italic">
-                "Compressing 4K video captures for Discord and client previews used to require opening bulky render queues. With DropSpher's CRF video compressor, I batch-crunch dozens of MP4 and MOV files right on my desktop without quality loss."
-              </p>
+              <div class="pricing-term">One-time payment &middot; Lifetime license</div>
             </div>
-            <div class="d-flex align-items-center gap-2 pt-2 border-top border-secondary border-opacity-25">
-              <div class="rounded-circle bg-success bg-opacity-20 text-success fw-bold p-2 small text-center" style="width: 36px; height: 36px; line-height: 20px;">MV</div>
-              <div>
-                <h6 class="text-white small fw-bold mb-0">Marcus Vance</h6>
-                <span class="text-secondary small" style="font-size: 0.75rem;">Senior Motion Designer</span>
-              </div>
+
+            <!-- Divider -->
+            <div class="pricing-divider"></div>
+
+            <!-- Key trust signals -->
+            <ul class="list-unstyled pricing-trust-list">
+              <li><i class="bi bi-patch-check-fill text-success"></i><span>Personal license &mdash; 1 user, up to 2 PCs</span></li>
+              <li><i class="bi bi-shield-lock-fill text-success"></i><span>100% offline &mdash; files never leave your machine</span></li>
+              <li><i class="bi bi-arrow-repeat text-success"></i><span>Free updates included, no renewal ever</span></li>
+              <li><i class="bi bi-currency-dollar text-success"></i><span>30-day money-back guarantee</span></li>
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="https://digispher.lemonsqueezy.com/checkout/buy/354c1450-391b-4552-8132-f8652029ecc7"
+               target="_blank" rel="noopener"
+               id="pricing-cta-btn"
+               class="btn btn-primary w-100 pricing-cta-btn">
+              <i class="bi bi-bag-check-fill me-2"></i>Get DropSpher &mdash; $19.99
+            </a>
+
+            <!-- Guarantee note -->
+            <div class="pricing-guarantee">
+              <i class="bi bi-shield-check text-success"></i>
+              <span>30-day unconditional refund if it doesn&apos;t fit your workflow. Email <code>digispher25@gmail.com</code>.</span>
             </div>
+
           </div>
         </div>
 
-        <!-- Review 3: David K. -->
-        <div class="col-md-6 col-lg-3">
-          <div class="card card-dz p-3 h-100 d-flex flex-column justify-content-between">
-            <div>
-              <div class="d-flex align-items-center gap-1 text-info mb-2">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p class="text-secondary small mb-3 fst-italic">
-                "The Developer & Data Toolbox alone is worth the $19.99 lifetime fee. The CSV to styled Excel converter automatically formats headers and auto-fits columns without needing Office installed, and instant SHA-256 hash calculation saves tons of terminal time."
-              </p>
-            </div>
-            <div class="d-flex align-items-center gap-2 pt-2 border-top border-secondary border-opacity-25">
-              <div class="rounded-circle bg-info bg-opacity-20 text-info fw-bold p-2 small text-center" style="width: 36px; height: 36px; line-height: 20px;">DK</div>
-              <div>
-                <h6 class="text-white small fw-bold mb-0">David K.</h6>
-                <span class="text-secondary small" style="font-size: 0.75rem;">Full-Stack Software Engineer</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Review 4: Elena Rostova -->
-        <div class="col-md-6 col-lg-3">
-          <div class="card card-dz p-3 h-100 d-flex flex-column justify-content-between">
-            <div>
-              <div class="d-flex align-items-center gap-1 text-info mb-2">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <p class="text-secondary small mb-3 fst-italic">
-                "The PDF to Word table reconstruction is real. Most converters spit out floating text boxes that break the minute you try to edit numbers. DropSpher rebuilt 40-page financial statements with clean cell rows, standard font alignments, and preserved formatting."
-              </p>
-            </div>
-            <div class="d-flex align-items-center gap-2 pt-2 border-top border-secondary border-opacity-25">
-              <div class="rounded-circle bg-info bg-opacity-20 text-info fw-bold p-2 small text-center" style="width: 36px; height: 36px; line-height: 20px;">ER</div>
-              <div>
-                <h6 class="text-white small fw-bold mb-0">Elena Rostova</h6>
-                <span class="text-secondary small" style="font-size: 0.75rem;">Financial Analyst & Auditor</span>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
+  <!-- FAQ SECTION -->
 
   <!-- THE "STACK" COST COMPARISON & VALUE BENCHMARK -->
   <section id="comparison" class="py-5">
@@ -1388,7 +1353,7 @@
 
       <!-- Stack Comparison Cards -->
       <div class="row g-3 mb-5 align-items-center">
-        <div class="col-lg-7">
+        <div class="col-lg-6">
           <div class="stack-box">
             <h5 class="text-white h6 mb-3"><i class="bi bi-layers text-danger me-2"></i>What You Pay Buying Separate Tools Today:</h5>
             <div class="d-flex justify-content-between py-2 border-bottom border-secondary border-opacity-25 small">
@@ -1439,19 +1404,19 @@
       <div class="table-responsive">
         <table class="table table-dark table-bordered border-secondary border-opacity-25 align-middle mb-0 text-center">
           <thead>
-            <tr class="table-secondary text-white">
+            <tr class="table-secondary text-primary">
               <th class="text-start py-3" style="width: 32%;">Capability / Feature</th>
-              <th class="bg-primary text-white py-3" style="width: 28%;">
+              <th class="bg-primary tex-white py-3" style="width: 28%;">
                 <div class="fs-6 fw-bold">DropSpher</div>
                 <div class="badge bg-white text-primary mt-1">Early Access $19.99</div>
               </th>
               <th class="py-3" style="width: 20%;">
-                <div class="small fw-bold text-secondary">Adobe Acrobat Pro</div>
-                <div class="small text-secondary">$239.88 / year</div>
+                <div class="small fw-bold text-primary">Adobe Acrobat Pro</div>
+                <div class="small text-primary">$239.88 / year</div>
               </th>
               <th class="py-3" style="width: 20%;">
-                <div class="small fw-bold text-secondary">Cloud Converters</div>
-                <div class="small text-secondary">$108 – $180 / year</div>
+                <div class="small fw-bold text-primary">Cloud Converters</div>
+                <div class="small text-primary">$108 – $180 / year</div>
               </th>
             </tr>
           </thead>
@@ -1516,79 +1481,6 @@
     </div>
   </section>
 
-  <!-- PRICING SECTION -->
-  <section id="pricing" class="py-5 border-top border-bottom border-dark" style="background: #090e1c;">
-    <div class="container py-3">
-      <div class="text-center mx-auto mb-4" style="max-width: 680px;">
-        <span class="badge-big-sale mb-2 d-inline-block"><i class="bi bi-fire anim-flame me-1"></i> EARLY ACCESS SPECIAL</span>
-        <h2 class="display-6 fw-bold text-white mb-2">One Payment. Zero Subscriptions.</h2>
-        <p class="text-secondary small">Why pay $108 every year to online converters? Get DropSpher once, and keep your files on your PC forever.</p>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-lg-7 col-xl-6">
-          <div class="card card-dz border-primary p-4 text-start shadow-lg position-relative overflow-hidden">
-            
-            <!-- EARLY ACCESS DIRECT DEAL BANNER -->
-            <div class="p-3 mb-4 rounded bg-dark border border-info border-opacity-25 text-center">
-              <div class="d-flex align-items-center justify-content-center gap-2 mb-1">
-                <span class="badge-big-sale"><i class="bi bi-rocket-takeoff anim-flame me-1"></i> DIRECT LAUNCH OFFER</span>
-                <span class="text-white small fw-bold">No Promo Code Needed</span>
-              </div>
-              <div class="small text-secondary">
-                Direct early access lifetime license for only <strong class="text-success fs-6">$19.99</strong> (Regular retail <span class="text-decoration-line-through">$39.00</span>) · Pay once, own forever.
-              </div>
-            </div>
-
-            <!-- Price Breakdown Header -->
-            <div class="d-flex justify-content-between align-items-center border-bottom border-secondary border-opacity-25 pb-3 mb-3">
-              <div>
-                <h3 class="h5 text-white mb-1">Full Desktop Lifetime License</h3>
-                <span class="badge bg-success text-white small"><i class="bi bi-patch-check-fill me-1"></i> Personal License (1 User / 2 PCs)</span>
-              </div>
-              <div class="text-end">
-                <div class="small text-secondary text-decoration-line-through">Retail: $39.00</div>
-                <div class="h2 text-success fw-bold mb-0">$19.99</div>
-                <div class="small text-info fw-bold">Early Access Special</div>
-              </div>
-            </div>
-
-            <h6 class="text-white small mb-2">Everything included in your purchase:</h6>
-            <div class="row g-2 mb-3 text-secondary small">
-              <div class="col-sm-6"><i class="bi bi-check2 text-info me-1"></i> PDF to Word (DOCX Tables)</div>
-              <div class="col-sm-6"><i class="bi bi-check2 text-info me-1"></i> 300 DPI PDF to Image Rendering</div>
-              <div class="col-sm-6"><i class="bi bi-check2 text-info me-1"></i> Dual-Engine PDF Compression</div>
-              <div class="col-sm-6"><i class="bi bi-check2 text-info me-1"></i> 7+ Image Formats & Resizer</div>
-              <div class="col-sm-6"><i class="bi bi-check2 text-info me-1"></i> EXIF & GPS Metadata Scrubber</div>
-              <div class="col-sm-6"><i class="bi bi-check2 text-info me-1"></i> Video H.264 & CRF Compressor</div>
-              <div class="col-sm-6"><i class="bi bi-check2 text-info me-1"></i> Audio Extractor & Converter</div>
-              <div class="col-sm-6"><i class="bi bi-check2 text-info me-1"></i> CSV to Styled Excel (.xlsx)</div>
-              <div class="col-sm-6"><i class="bi bi-check2 text-info me-1"></i> Hashes, Base64 & JSON Tools</div>
-              <div class="col-sm-6"><i class="bi bi-check2 text-info me-1"></i> Offline Vector QR Code Maker</div>
-              <div class="col-sm-6"><i class="bi bi-check2 text-info me-1"></i> Future Feature Updates & Bug Fixes</div>
-              <div class="col-sm-6"><i class="bi bi-check2 text-info me-1"></i> Zero Monthly Fees · Ever</div>
-            </div>
-
-            <!-- LemonSqueezy Direct Checkout Link Button -->
-            <a href="https://digispher.lemonsqueezy.com/checkout/buy/354c1450-391b-4552-8132-f8652029ecc7" target="_blank" rel="noopener" class="btn btn-primary w-100 py-2.5 fw-semibold mb-3 shadow">
-              <i class="bi bi-bag-check-fill me-1"></i> Get Early Access Deal ($19.99)
-            </a>
-
-            <!-- 30-Day Guarantee -->
-            <div class="p-2 rounded bg-dark border border-secondary border-opacity-25 d-flex align-items-center gap-2 small">
-              <i class="bi bi-shield-check text-success fs-4"></i>
-              <div>
-                <strong class="text-white">30-Day Money-Back Guarantee:</strong>
-                <span class="text-secondary">If DropSpher doesn't fit your daily productivity workflow, email <code>digispher25@gmail.com</code> within 30 days for an unconditional full refund.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ SECTION -->
   <section id="faq" class="py-5">
     <div class="container py-3">
       <div class="text-center mx-auto mb-4" style="max-width: 680px;">
